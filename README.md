@@ -1,13 +1,17 @@
 # Overview
-This is a very simple, bare-bones NodeJS project created for you to use with Docker.
+This is a very simple, bare-bones NodeJS project created to test CI?/CD with Docker and TravisCI.
 
 # Local Setup
+* Update .travis.yml file, replace Docker username and Docker repository name.
 * Install dependencies: `npm install`
 * Run server: `node server.js`
 
-# Container Setup
-* Build image: `docker build .`
-* Run container with image: `docker run {image_id}` where `image_id` can be retrieved by running `docker images` and found under the column `IMAGE ID`
+# TravisCi
+* Create TravisCI accounts.
+* Add enviroment variables for Docker username and password.
+* Link github repo for CI/CD.
+* Start build.
 
-# Container teardown
-* Remove container: `docker kill {container_id}` where `container_id` can be retrieved by running `docker ps` and found under the column `CONTAINER ID`
+# Test
+* Check if build completed successfully.
+* Go to DockerHub and check the specified repository to have latest version just updated.
